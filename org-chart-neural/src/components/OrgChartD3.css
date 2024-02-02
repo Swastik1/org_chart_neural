@@ -1,16 +1,34 @@
-/* src/components/OrgChartD3.css */
+.App {
+  overflow: hidden;
+  height: 150vh;
+}
 .chart-container {
   margin-top: 20px;
   text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .node {
   fill: #3498db;
   stroke: #fff;
-  stroke-width: 2px;
+  stroke-width: 1px;
 }
 
 .link {
   stroke: #e74c3c;
   stroke-width: 2px;
+}
+
+.link.highlighted {
+  stroke: #ff5733; /* Change this to your desired highlight color */
+  stroke-width: 3px;
+  stroke-opacity: 1;
+}
+
+.label {
+  font-size: 12px;
 }
